@@ -1,0 +1,108 @@
+# CentraMCP Freeware License
+
+> **Summary — not part of the licence terms.** CentraMCP is free to download and use for operating your own Centra e-commerce instance. You may not sell or redistribute it, or reverse engineer it beyond what the law guarantees you. It connects to your Centra instance with **your** API token and, if you enable write access, it can change live commercial data — you are responsible for the permissions you configure and for what your AI assistant does with them. The software is provided as is, without warranty, and Centra's liability is limited to the fullest extent the law allows. Centra may update or discontinue it at any time. The binding terms are below.
+
+---
+
+## 1. Definitions
+
+**"Centra"** means Centra Technology AB, org.nr 556768-1050, a company incorporated in Sweden with its registered office at Torsgatan 26, 113 21 Stockholm, Sweden.
+
+**"Centra group company"** means an entity that controls, is controlled by, or is under common control with Centra.
+
+**"Software"** means the computer program known as CentraMCP (binary name `centra-mcp`), distributed by Centra in compiled, executable form only — including all binaries, archives, bundles (including `.mcpb` bundles), launcher scripts, embedded documentation and configuration templates, and any updates or new versions that Centra makes available under this Licence.
+
+**"Centra Instance"** means an instance of the Centra e-commerce platform operated under a valid agreement with Centra or a Centra group company.
+
+**"You"** means the person or entity exercising rights under this Licence. If You use the Software on behalf of an entity (including as an employee, contractor or agency), You represent that You are authorised to bind that entity, and "You" refers to that entity.
+
+## 2. Acceptance
+
+**You accept this Licence by confirming acceptance where prompted — for example on first run of the Software or in the configuration screen of a host application — or otherwise by downloading, installing or using the Software.** If You do not accept this Licence, do not download, install or use the Software.
+
+## 3. Licence grant
+
+Subject to Your compliance with this Licence, Centra grants You a non-exclusive, non-transferable, non-sublicensable, royalty-free licence to install and run the Software, in executable form only, on machines under Your control, solely for the purpose of operating, administering or analysing a Centra Instance that You are authorised to access (whether as the merchant or as a service provider acting on a merchant's behalf). The Software is licensed, not sold. No fee is payable for this Licence.
+
+## 4. Restrictions
+
+Except as expressly permitted by Section 3 or by mandatory applicable law, You shall not, and shall not permit any third party to:
+
+(a) distribute, sell, rent, lease, lend, sublicense, publish or otherwise make the Software available to any third party, or make it available as a hosted or managed service to third parties;
+
+(b) copy the Software other than as reasonably necessary for installation, deployment on Your own machines, and back-up;
+
+(c) modify, adapt, translate or create derivative works of the Software;
+
+(d) reverse engineer, decompile, disassemble or otherwise attempt to derive the source code of the Software, **except to the extent that such acts are permitted by mandatory applicable law notwithstanding this restriction** — including the non-waivable rights to observe, study and test the functioning of a program, to make back-up copies, to reproduce or translate code where necessary to correct errors affecting the operation of the Software, and to decompile for interoperability under Articles 5 and 6 of Directive 2009/24/EC as implemented in national law (in Sweden, 26 g–h §§ of the Swedish Copyright Act (1960:729)). Centra will, on request to legal@centra.com, make available the information necessary to achieve the interoperability of an independently created program with the Software. Centra encourages You to make such a request before decompiling: where interoperability information is readily available, the statutory conditions for decompilation are not met;
+
+(e) remove, alter or obscure any copyright, trademark or other proprietary notice in or on the Software; or
+
+(f) use the Software to access any Centra Instance or API that You are not authorised to access, or otherwise in breach of the terms governing Your (or Your principal's) use of the Centra platform.
+
+## 5. Intellectual property
+
+The Software is protected by copyright and other intellectual property laws. Centra and its licensors retain all right, title and interest in and to the Software. This Licence grants You no rights other than those expressly stated in Section 3. Nothing in this Licence grants You any right to use the names, logos or trademarks of Centra (including "Centra" and "CentraMCP"), except for factual, non-misleading references to the Software by name.
+
+## 6. Open-source components
+
+The Software embeds third-party open-source software components (including Go modules) that are licensed to You directly under their own licence terms, not under this Licence. Nothing in this Licence limits or overrides the rights granted to You, or the obligations imposed on Centra, under those terms. Copies of the applicable open-source licences and attribution notices are included with each distribution of the Software and are also available from Centra on request at legal@centra.com.
+
+## 7. Your data, credentials and responsibility
+
+The Software runs on Your machine and acts on Your Centra Instance using API credentials that **You** supply and control. In particular, You acknowledge and agree that:
+
+(a) the Software can read — and, where You enable write access, create, modify and delete — live commercial data in Your Centra Instance, including orders, prices and stock levels, whether in test or production environments; write access and production-environment access are disabled by default and operate only if and to the extent You enable them;
+
+(b) actions initiated through the Software by an AI assistant, agent or other client connected to it are treated as Your actions. **You are solely responsible for the permissions You configure (including write access and production access), for the instructions given to any AI assistant connected to the Software, for reviewing and verifying the results of any action taken through the Software, and for maintaining appropriate back-ups and safeguards for Your data**;
+
+(c) the Software may store a local cache of data from Your Centra Instance (including an encrypted local analytics database) on Your machine. That data is Yours; You are responsible for securing the machines and accounts on which the Software runs and for deleting local data when no longer required;
+
+(d) You are responsible for keeping Your API tokens confidential and for scoping them appropriately; and
+
+(e) the Software runs entirely on Your machines and does not transmit any data to Centra by virtue of this Licence. Data exchanged between the Software and Your Centra Instance is governed by the agreement (including any data processing terms) under which that Centra Instance is provided, not by this Licence, and Centra does not act as Your processor under this Licence. Where You connect an AI assistant or other client to the Software, data retrieved from Your Centra Instance — which may include personal data of Your customers — will be disclosed to that assistant and its providers; You are solely responsible, as controller or otherwise, for the lawfulness of that disclosure and for Your arrangements with those providers.
+
+## 8. Updates and availability
+
+Centra may, at its sole discretion and without notice or liability, release updates or new versions of the Software (which may add, change or remove functionality), cease distributing the Software, or discontinue it entirely. Centra has no obligation to provide maintenance, support, updates or error corrections. The Software depends on Centra's APIs, which may change; a given version of the Software may cease to function with future versions of the Centra platform.
+
+## 9. No warranty
+
+The Software is provided free of charge, **"as is" and "as available", without warranty of any kind**. To the maximum extent permitted by applicable law, Centra disclaims all warranties, conditions and other terms, whether express, implied or statutory, including any implied warranties or conditions of satisfactory quality, merchantability, fitness for a particular purpose, accuracy, non-infringement, and uninterrupted or error-free operation. You bear the entire risk as to the quality and performance of the Software and its suitability for Your purposes.
+
+## 10. Limitation of liability
+
+**10.1 Nothing excluded that cannot be.** Nothing in this Licence excludes or limits Centra's liability for: (a) death or personal injury caused by the negligence of Centra or its employees, agents or subcontractors; (b) fraud or fraudulent misrepresentation; (c) damage caused by Centra's intent or gross negligence (*uppsåt eller grov vårdslöshet*); (d) liability towards natural persons under mandatory product liability law (in Sweden, produktansvarslagen (1992:18), and national law implementing Directive (EU) 2024/2853 once applicable); or (e) any other liability that cannot be excluded or limited under mandatory applicable law.
+
+**10.2 Exclusions.** Subject to Section 10.1, and to the maximum extent permitted by applicable law, Centra shall have no liability to You, whether in contract, tort (including negligence), breach of statutory duty or otherwise, arising out of or in connection with the Software or this Licence, including liability for: loss of profits, revenue, business, goodwill or anticipated savings; loss, corruption or alteration of data (including data in any Centra Instance modified through the Software); business interruption; or any indirect, special, incidental or consequential loss.
+
+**10.3 Cap.** Subject to Sections 10.1 and 10.2, if and to the extent Centra is nevertheless held liable, its total aggregate liability arising out of or in connection with the Software and this Licence shall not exceed EUR 100.
+
+**10.4 Basis of the bargain.** You acknowledge that the Software is provided free of charge and that this Section 10 reflects a reasonable allocation of risk in light of that fact; the Licence would not be granted on these terms without it.
+
+**10.5 Separate terms.** Each exclusion and limitation in this Section 10 is a separate, independent and severable term.
+
+## 11. Termination
+
+This Licence takes effect when You first download, install or use the Software and continues until terminated. It terminates automatically and immediately if You materially breach it. Centra may also terminate it on reasonable notice published through the distribution channels for the Software. Upon termination You must cease all use of the Software and destroy all copies in Your possession or control. Sections 1, 4 (in respect of any copies not yet destroyed), 5, 6, 7, 9, 10, 12, 13 and 14 survive termination. Termination does not affect Your rights in respect of open-source components under their own licences, or any rights You hold under mandatory law.
+
+## 12. Business use; consumer savings; severability
+
+**12.1** The Software is a business tool intended for use by Centra customers and their staff and service providers in the course of a trade, business or profession, and is provided for business use only.
+
+**12.2** If, notwithstanding Section 12.1, You deal as a consumer under applicable law (including, in the United Kingdom, the Consumer Rights Act 2015, or in the EU/EEA, national consumer protection law), nothing in this Licence excludes, limits or otherwise affects any statutory rights or remedies You have as a consumer that cannot lawfully be excluded or limited, and this Licence shall be read subject to those rights.
+
+**12.3** If any provision of this Licence is held invalid, unlawful or unenforceable in any jurisdiction, it shall apply in that jurisdiction with the minimum modification necessary to make it valid and enforceable while giving the greatest possible effect to its original intent; if it cannot be so modified, it shall be severed for that jurisdiction only, and the remainder of this Licence shall continue in full force.
+
+## 13. General
+
+This Licence constitutes the entire agreement between You and Centra concerning the Software and supersedes all prior communications on that subject, provided that nothing in this Section limits either party's liability for fraudulent misrepresentation, and provided further that this Licence does not amend any separate agreement governing Your (or Your principal's) subscription to the Centra platform. You are responsible for complying with applicable export control and sanctions laws in Your use of the Software. Centra's failure to enforce a provision is not a waiver. You may not assign this Licence; Centra may assign it to a Centra group company or in connection with a merger or transfer of the relevant business.
+
+## 14. Governing law and jurisdiction
+
+This Licence, and any non-contractual obligations arising out of or in connection with it, shall be governed by and construed in accordance with the substantive law of Sweden, excluding its conflict-of-law rules. The courts of Sweden shall have exclusive jurisdiction, with the Stockholm District Court (Stockholms tingsrätt) as court of first instance. This Section is without prejudice to any mandatory rules of a court of competent jurisdiction that apply irrespective of the chosen law, and to Section 12.2.
+
+---
+
+**CentraMCP Freeware License, version 1.0 — 2026-08-04**
+Centra Technology AB · Torsgatan 26, 113 21 Stockholm, Sweden · legal@centra.com
