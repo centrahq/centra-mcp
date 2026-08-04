@@ -8,16 +8,16 @@ This repository hosts the **binary releases** of CentraMCP. Documentation lives 
 
 CentraMCP ships in two formats:
 
-### Claude Desktop (one-click `.mcpb`)
+### MCPB one-click install bundle
 
-Download **[centra-mcp.mcpb](https://github.com/centrahq/centra-mcp/releases/latest/download/centra-mcp.mcpb)** — always the newest release — and open it in Claude Desktop. The install form asks for your Centra Integration API URL and token, the write/production permission toggles, and license acceptance. One `.mcpb` install is bound to one Centra instance; install once per instance.
+Works with Claude Desktop and any other agent that accepts MCPB bundles. Download **[centra-mcp.mcpb](https://github.com/centrahq/centra-mcp/releases/latest/download/centra-mcp.mcpb)** — always the newest release — and open it in your MCPB-aware agent. The install form asks for your Centra Integration API URL and token, the write/production permission toggles, and license acceptance. One `.mcpb` install is bound to one Centra instance; install once per instance.
 
-> The `.mcpb` is currently unsigned — hosts may show an "unverified publisher" warning. Verify your download against the SHA256 in `checksums.txt` on the [releases page](https://github.com/centrahq/centra-mcp/releases).
-
-### CLI via Homebrew (Linux / macOS / WSL)
+### CLI tool for Linux / macOS / WSL (via Homebrew)
 
 ```bash
-brew install centrahq/centra-mcp/centra-mcp
+brew tap centrahq/centra-mcp
+brew trust --tap centrahq/centra-mcp
+brew install centra-mcp
 ```
 
 One CLI install manages any number of Centra instances. After installing:
