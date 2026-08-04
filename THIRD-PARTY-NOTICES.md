@@ -1,8 +1,8 @@
 # Third-Party Notices
 
-CentraMCP embeds the following open-source components. Each component is
+Centra MCP embeds the following open-source components. Each component is
 licensed to you directly under its own license terms (see Section 6 of the
-CentraMCP Freeware License), reproduced verbatim below.
+Centra MCP Freeware License), reproduced verbatim below.
 
 The `## module:` section headers are machine-checked against the released
 binary's dependency graph by `scripts/notices-check.sh` (`make notices-check`):

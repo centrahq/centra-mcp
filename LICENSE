@@ -1,6 +1,6 @@
-# CentraMCP Freeware License
+# Centra MCP Freeware License
 
-> **Summary — not part of the licence terms.** CentraMCP is free to download and use for operating your own Centra e-commerce instance. You may not sell or redistribute it, or reverse engineer it beyond what the law guarantees you. It connects to your Centra instance with **your** API token and, if you enable write access, it can change live commercial data — you are responsible for the permissions you configure and for what your AI assistant does with them. The software is provided as is, without warranty, and Centra's liability is limited to the fullest extent the law allows. Centra may update or discontinue it at any time. The binding terms are below.
+> **Summary — not part of the licence terms.** Centra MCP is free to download and use for operating your own Centra e-commerce instance. You may not sell or redistribute it, or reverse engineer it beyond what the law guarantees you. It connects to your Centra instance with **your** API token and, if you enable write access, it can change live commercial data — you are responsible for the permissions you configure and for what your AI assistant does with them. The software is provided as is, without warranty, and Centra's liability is limited to the fullest extent the law allows. Centra may update or discontinue it at any time. The binding terms are below.
 
 ---
 
@@ -10,7 +10,7 @@
 
 **"Centra group company"** means an entity that controls, is controlled by, or is under common control with Centra.
 
-**"Software"** means the computer program known as CentraMCP (binary name `centra-mcp`), distributed by Centra in compiled, executable form only — including all binaries, archives, bundles (including `.mcpb` bundles), launcher scripts, embedded documentation and configuration templates, and any updates or new versions that Centra makes available under this Licence.
+**"Software"** means the computer program known as Centra MCP (binary name `centra-mcp`), distributed by Centra in compiled, executable form only — including all binaries, archives, bundles (including `.mcpb` bundles), launcher scripts, embedded documentation and configuration templates, and any updates or new versions that Centra makes available under this Licence.
 
 **"Centra Instance"** means an instance of the Centra e-commerce platform operated under a valid agreement with Centra or a Centra group company.
 
@@ -42,7 +42,7 @@ Except as expressly permitted by Section 3 or by mandatory applicable law, You s
 
 ## 5. Intellectual property
 
-The Software is protected by copyright and other intellectual property laws. Centra and its licensors retain all right, title and interest in and to the Software. This Licence grants You no rights other than those expressly stated in Section 3. Nothing in this Licence grants You any right to use the names, logos or trademarks of Centra (including "Centra" and "CentraMCP"), except for factual, non-misleading references to the Software by name.
+The Software is protected by copyright and other intellectual property laws. Centra and its licensors retain all right, title and interest in and to the Software. This Licence grants You no rights other than those expressly stated in Section 3. Nothing in this Licence grants You any right to use the names, logos or trademarks of Centra (including "Centra" and "Centra MCP"), except for factual, non-misleading references to the Software by name.
 
 ## 6. Open-source components
 
@@ -104,5 +104,5 @@ This Licence, and any non-contractual obligations arising out of or in connectio
 
 ---
 
-**CentraMCP Freeware License, version 1.0 — 2026-08-04**
+**Centra MCP Freeware License, version 1.0 — 2026-08-04**
 Centra Technology AB · Torsgatan 26, 113 21 Stockholm, Sweden · legal@centra.com
