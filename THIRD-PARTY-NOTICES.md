@@ -284,7 +284,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## module: github.com/ncruces/go-sqlite3-wasm/v3
+## module: github.com/ncruces/go-sqlite3-wasm/v5
 
 ```
 MIT No Attribution License
@@ -575,7 +575,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-## SQLite (embedded via github.com/ncruces/go-sqlite3-wasm/v3)
+## SQLite (embedded via github.com/ncruces/go-sqlite3-wasm/v5)
 
 The go-sqlite3-wasm module is a machine translation of SQLite (and supporting
 libraries) to Go; per that module's README, the original authors retain
