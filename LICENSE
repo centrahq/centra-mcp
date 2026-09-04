@@ -1,6 +1,6 @@
 # Centra MCP Freeware License
 
-> **Summary — not part of the licence terms.** Centra MCP is free to download and use for operating your own Centra e-commerce instance. You may not sell or redistribute it, or reverse engineer it beyond what the law guarantees you. It connects to your Centra instance with **your** API token and, if you enable write access, it can change live commercial data — you are responsible for the permissions you configure and for what your AI assistant does with them. The software is provided as is, without warranty, and Centra's liability is limited to the fullest extent the law allows. Centra may update or discontinue it at any time. The binding terms are below.
+> **Summary — not part of the licence terms.** Centra MCP is free to download and use for operating your own Centra instance. You may not sell or redistribute it, or reverse engineer it beyond what the law guarantees you. It connects to your Centra instance with **your** API token and, if you enable write access, it can change live commercial data — you are responsible for the permissions you configure and for what your AI assistant does with them. The software is provided as is, without warranty, and Centra's liability is limited to the fullest extent the law allows. Centra may update or discontinue it at any time. The binding terms are below.
 
 ---
 
@@ -12,13 +12,15 @@
 
 **"Software"** means the computer program known as Centra MCP (binary name `centra-mcp`), distributed by Centra in compiled, executable form only — including all binaries, archives, bundles (including `.mcpb` bundles), launcher scripts, embedded documentation and configuration templates, and any updates or new versions that Centra makes available under this Licence.
 
-**"Centra Instance"** means an instance of the Centra e-commerce platform operated under a valid agreement with Centra or a Centra group company.
+**"Centra Instance"** means an instance of the Centra platform operated under a valid agreement with Centra or a Centra group company.
 
 **"You"** means the person or entity exercising rights under this Licence. If You use the Software on behalf of an entity (including as an employee, contractor or agency), You represent that You are authorised to bind that entity, and "You" refers to that entity.
 
 ## 2. Acceptance
 
 **You accept this Licence by confirming acceptance where prompted — for example on first run of the Software or in the configuration screen of a host application — or otherwise by downloading, installing or using the Software.** If You do not accept this Licence, do not download, install or use the Software.
+
+This is version 2 of this Licence. Acceptance of an earlier version is not acceptance of this version: where the Software or its installer prompts You to confirm this version, that confirmation is required even if You previously accepted an earlier version, and the Software may decline to operate until it is given.
 
 ## 3. Licence grant
 
@@ -60,11 +62,35 @@ The Software runs on Your machine and acts on Your Centra Instance using API cre
 
 (d) You are responsible for keeping Your API tokens confidential and for scoping them appropriately; and
 
-(e) the Software runs entirely on Your machines and does not transmit any data to Centra by virtue of this Licence. Data exchanged between the Software and Your Centra Instance is governed by the agreement (including any data processing terms) under which that Centra Instance is provided, not by this Licence, and Centra does not act as Your processor under this Licence. Where You connect an AI assistant or other client to the Software, data retrieved from Your Centra Instance — which may include personal data of Your customers — will be disclosed to that assistant and its providers; You are solely responsible, as controller or otherwise, for the lawfulness of that disclosure and for Your arrangements with those providers.
+(e) the Software transmits usage statistics to service providers acting on Centra's behalf as described in Section 7A (Usage statistics) and checks for updates as described in Section 7A.10 (Update checks); apart from that, it runs entirely on Your machines and transmits no other data to Centra by virtue of this Licence. Data exchanged between the Software and Your Centra Instance is governed by the agreement (including any data processing terms) under which that Centra Instance is provided, not by this Licence, and Centra does not act as Your processor under this Licence. Where You connect an AI assistant or other client to the Software, data retrieved from Your Centra Instance — which may include personal data of Your customers — will be disclosed to that assistant and its providers; You are solely responsible, as controller or otherwise, for the lawfulness of that disclosure and for Your arrangements with those providers.
+
+## 7A. Usage statistics
+
+The Software records statistics about its own use and transmits them as described in this Section: usage statistics containing no personal data such as names or email addresses. This Section serves as the privacy notice for that processing and is published as part of this Licence. Centra is the controller of the processing described in this Section.
+
+**7A.1 What is collected.** The usage statistics consist exclusively of: (a) the hostname of the Centra Instance to which the Software connects, and the brand (client) identifier and environment classification derived from that hostname; (b) a randomly generated installation identifier stored on Your machine; (c) session identifiers generated by the Software; (d) the version of the Software; (e) the operating system and processor architecture of the machine on which the Software runs; (f) the channel through which the Software was installed and the mode in which it is configured (configuration file or environment variables); (g) the name and version of the client application (for example, an AI assistant host) connected to the Software, and the version of the connection protocol it uses; (h) the type of each recorded action (for example a tool invocation, a session start or stop, an environment switch, or a playbook or guide retrieval), the names of the tools, playbooks and guides invoked, the surface through which they were invoked, their business-domain categories, and whether the invoked tool reads or writes data; (i) invocation outcomes — success or failure, duration, and a coarse error category; (j) the names, never the values, of request parameters; (k) the categories of Centra API permission used; (l) the permission mode (read-only or read-and-write); (m) true/false indicators of Centra-internal usage; and (n) the date and time of each recorded action and of the start of the session in which it occurred, and technical identifiers generated by the Software to de-duplicate transmissions. The Software determines the indicators in (m) locally — from known Centra-internal hostname patterns, an explicit staff-machine setting, and by checking whether the API token's contact email address is a Centra staff address — and transmits only the true/false results.
+
+**7A.2 What is never collected.** The usage statistics never include message content, request or response payloads, raw error text, names, email addresses, IP addresses (which the recipient does not record), or any personal data of Your customers.
+
+**7A.3 Local recording; usage recorded before transmission is enabled.** The Software records usage statistics locally on Your machine from installation. The local store retains at most approximately 30 days of records. When transmission is or becomes enabled, the transmitted usage statistics may include usage recorded before transmission was enabled, to the extent it remains in the local store, as well as usage occurring while transmission is enabled.
+
+**7A.4 Deferred delivery.** If Your network prevents transmission, recorded usage statistics are retained locally — again, for at most approximately 30 days — and transmitted when a connection is available. Blocking the transmission endpoint therefore defers delivery rather than preventing it. To stop the transmission of usage statistics, disable them as described in Section 7A.5.
+
+**7A.5 Your choice at installation; how to change it.** Whether the Software transmits usage statistics is Your choice, made when You install the Software or first accept this version of the Licence. Until You have made that choice, the Software transmits no usage statistics. You may enable or disable them at any time by any of the following means: running `centra-mcp setup telemetry --usage-stats=true` or `centra-mcp setup telemetry --usage-stats=false`; setting the `CENTRA_USAGE_STATISTICS` environment variable to `true` or `false`, for installations configured through environment variables; ticking or unticking the usage-statistics checkbox presented at installation or in the configuration screen of a host application; or using the usage-statistics setting in the Software's own setup interface. Disabling stops the transmission of usage statistics. The Software continues to record them locally within the retention bound described in Section 7A.3, and re-enabling transmits what remains in the local store (Section 7A.3).
+
+**7A.6 Legal basis; Your right to object.** Centra processes the usage statistics on the basis of its legitimate interests in understanding how the Software is used, prioritising its development, and detecting defects. **You have the right to object to this processing at any time.** You exercise that right by disabling usage statistics as described in Section 7A.5, which stops their transmission to Centra; no other step is required.
+
+**7A.7 Recipients.** The usage statistics are transmitted to a product-analytics service provider processing usage statistics on Centra's behalf in data centres within the European Union. The identity of the current provider is stated in the technical documentation published with the Software and may change from time to time without amendment of this Licence; the category described in the first sentence of this Section 7A.7 is the operative term.
+
+**7A.8 Retention.** Transmitted usage statistics are retained for up to two years. Thereafter only aggregate data, from which the identifiers described in Section 7A.1 have been removed, is retained.
+
+**7A.9 Identifier reset; access and erasure.** Deleting the installation-identifier file that the Software stores on Your machine causes a new installation identifier to be generated, dissociating future usage statistics from those already transmitted; it does not delete data already transmitted. You may request access to, or erasure of, the transmitted usage statistics associated with Your installation by writing to legal@centra.com.
+
+**7A.10 Update checks.** The Software periodically checks whether a newer version of the Software is available by requesting the current release information from the distribution service through which Centra publishes the Software. That request carries the version of the Software in use and none of the usage statistics described in Section 7A.1; it is not affected by Your choice under Section 7A.5. As with any download, the operator of the distribution service may record the network address from which the request is made. Once a newer version has been available for more than seven days, or when the check has not succeeded for seven days, the Software requires an update before it continues to connect to Your Centra Instance.
 
 ## 8. Updates and availability
 
-Centra may, at its sole discretion and without notice or liability, release updates or new versions of the Software (which may add, change or remove functionality), cease distributing the Software, or discontinue it entirely. Centra has no obligation to provide maintenance, support, updates or error corrections. The Software depends on Centra's APIs, which may change; a given version of the Software may cease to function with future versions of the Centra platform.
+Centra may, at its sole discretion and without notice or liability, release updates or new versions of the Software (which may add, change or remove functionality), cease distributing the Software, or discontinue it entirely. Centra has no obligation to provide maintenance, support, updates or error corrections. Continued use of the Software may require installing an update, as described in Section 7A.10. The Software depends on Centra's APIs, which may change; a given version of the Software may cease to function with future versions of the Centra platform.
 
 ## 9. No warranty
 
@@ -84,7 +110,7 @@ The Software is provided free of charge, **"as is" and "as available", without w
 
 ## 11. Termination
 
-This Licence takes effect when You first download, install or use the Software and continues until terminated. It terminates automatically and immediately if You materially breach it. Centra may also terminate it on reasonable notice published through the distribution channels for the Software. Upon termination You must cease all use of the Software and destroy all copies in Your possession or control. Sections 1, 4 (in respect of any copies not yet destroyed), 5, 6, 7, 9, 10, 12, 13 and 14 survive termination. Termination does not affect Your rights in respect of open-source components under their own licences, or any rights You hold under mandatory law.
+This Licence takes effect when You first download, install or use the Software and continues until terminated. It terminates automatically and immediately if You materially breach it. Centra may also terminate it on reasonable notice published through the distribution channels for the Software. Upon termination You must cease all use of the Software and destroy all copies in Your possession or control. Sections 1, 4 (in respect of any copies not yet destroyed), 5, 6, 7, 7A (in respect of usage statistics already recorded or transmitted), 9, 10, 12, 13 and 14 survive termination. Termination does not affect Your rights in respect of open-source components under their own licences, or any rights You hold under mandatory law.
 
 ## 12. Business use; consumer savings; severability
 
@@ -100,9 +126,9 @@ This Licence constitutes the entire agreement between You and Centra concerning 
 
 ## 14. Governing law and jurisdiction
 
-This Licence, and any non-contractual obligations arising out of or in connection with it, shall be governed by and construed in accordance with the substantive law of Sweden, excluding its conflict-of-law rules. The courts of Sweden shall have exclusive jurisdiction, with the Stockholm District Court (Stockholms tingsrätt) as court of first instance. This Section is without prejudice to any mandatory rules of a court of competent jurisdiction that apply irrespective of the chosen law, and to Section 12.2.
+This Licence, and any non-contractual obligations arising out of or in connection with it, shall be governed by and construed in accordance with the substantive law of Sweden, excluding its conflict-of-law rules. The courts of Sweden shall have exclusive jurisdiction, with the Stockholm District Court (Stockholms tingsrätt) as court of first instance. This Section is without prejudice to any mandatory rules of a court of competent jurisdiction that apply irrespective of the chosen law, and to Section 12.2. Nothing in this Section limits any right You have under applicable data protection law to lodge a complaint with a supervisory authority or to bring proceedings in another competent forum in respect of the processing described in Section 7A.
 
 ---
 
-**Centra MCP Freeware License, version 1.0 — 2026-08-04**
+**Centra MCP Freeware License, version 2.0 — 2026-08-11**
 Centra Technology AB · Torsgatan 26, 113 21 Stockholm, Sweden · legal@centra.com
