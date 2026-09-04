@@ -10,7 +10,7 @@ Centra MCP ships in two formats:
 
 ### MCPB one-click install bundle
 
-Works with Claude Desktop and any other agent that accepts MCPB bundles. Download **[centra-mcp.mcpb](https://github.com/centrahq/centra-mcp/releases/latest/download/centra-mcp.mcpb)** — always the newest release — and open it in your MCPB-aware agent. The install form asks for your Centra Integration API URL and token, the write/production permission toggles, and license acceptance. One `.mcpb` install is bound to one Centra instance; install once per instance.
+Works with Claude Desktop and any other agent that accepts MCPB bundles. Download **[centra-mcp.mcpb](https://github.com/centrahq/centra-mcp/releases/latest/download/centra-mcp.mcpb)** — always the newest release — and open it in your MCPB-aware agent. The install form asks for your Centra Integration API URL and token, the write/production permission toggles, whether to share usage statistics with Centra (pre-selected, changeable at any time), and license acceptance. One `.mcpb` install is bound to one Centra instance; install once per instance. Whichever format you use, Centra MCP requires the current version: seven days after a newer release it stops connecting to Centra until you install it.
 
 ### CLI tool for Linux / macOS / WSL (via Homebrew)
 
