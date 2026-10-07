@@ -25,7 +25,7 @@ One CLI install manages any number of Centra instances. After installing:
 ```bash
 centra-mcp setup add <clientname> --env qa --token <YOUR_API_TOKEN>
 centra-mcp setup test
-centra-mcp setup install-user claude-code   # or cursor, gemini, codex, claude-desktop
+centra-mcp setup install-user claude-code   # other AI clients: centra-mcp --help
 ```
 
 On Windows, use the `.mcpb` with Claude Desktop, or run the CLI inside WSL.
